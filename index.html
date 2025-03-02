@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/1a8bd62b41.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo1.jpg" class="logo1">
+                <ul id="sidemenu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-square-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p> Full Stack developer</p>
+                <h1>Hi,<br> I'm <span>Chetana Siva Durga</span></h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- ---------------------------ABOUT------------ -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/home.jpg">
+                </div>
+
+                <div class="about-col-2">
+                    <h1 class="sub-title"> About Me </h1>
+                    <p>A dedicated software developer skilled in HTML, CSS, JavaScript, and responsive web design.
+                        Proficient in Data Structures and Algorithms, including hashing and trees, for efficient problem
+                        solving. Experienced in building dynamic, user-friendly websites with optimized performance.
+                        Passionate about innovation and continuous learning in web development and algorithm design."</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="Skills">
+                        <ul>
+                            <li><span>DSA</span><br>Skilled in DSA, including hashing, trees, and efficient problem-solving techniques</li>
+                            <li><span>Web Development</span><br>Web app development</li>
+                            <li><span>App Development</span><br>Building Android/IOS apps</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="Experience">
+                        <ul>
+                            <li><span>2025 - Current</span><br>Web designer</li>
+                            <li><span>2024</span><br>Worked on DSA</li>
+                            <li><span>2023</span><br>Front End training</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>2023-2027</span><br>B.Tech in VIT-AP UNIVERSITY</li>
+                            <li><span>2021-2023</span><br>MPC at Narayana College</li>
+                            <li><span>Schooling</span><br>Kennedy - Guntur</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ------------------services------------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Creating visually appealing and user-friendly website layouts. 
+                       Enhancing user experience with responsive and interactive designs.</p>
+                    <a href="#">Learn more</a>
+                </div>
+    
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>DSA</h2>
+                    <p>I can develop efficient solutions using Data Structures & Algorithms (DSA) to optimize system performance. By utilizing arrays, stacks, linked lists, and trees, I ensure scalability and reliability. My focus is on delivering solutions that address complex challenges and improve overall system efficiency.
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+    
+                <div>
+                    <i class="fa-brands fa-app-store-ios"></i>
+                    <h2>App Design</h2>
+                    <p>Creating visually appealing and user-friendly mobile app interfaces. 
+                       Focusing on seamless navigation and interactive user experiences.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-----------portfolio------------ -->
+
+    <div id="portfolio"> 
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="worklist">
+                <div class="work">
+                    <img src="images/work11.jpg">
+                    <div class="layer">
+                        <h3> DSA </h3>
+                        <p> Implemented fundamental and advanced data structures like stacks, queues, linked lists, and binary
+                            trees. Developed efficient algorithms for sorting, searching, and graph traversal to optimize problem solving
+                        </p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work22.jpg">
+                    <div class="layer">
+                        <h3> JAVA </h3>
+                        <p> Developed advanced Java programs, including pattern printing, number manipulation, and complex
+                            swapping techniques. Implemented high-level logic for mathematical computations, recursion, and
+                            problrm solving algorithms.
+                        </p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/wrork33.jpg">
+                    <div class="layer">
+                        <h3> FRONT END </h3>
+                        <p>Developed dynamic and responsive web interfaces using HTML, CSS, and JavaScript. Created interactive
+                            user experiences with modern design principles and frameworks.
+                        </p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    
+    <!---------------------------contact------------ -->
+
+    <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> chetanasivadurga@gmail.com</p>
+                <p><i class="fa-solid fa-phone-volume"></i> 9393045999</p>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/chetana__1826?igsh=ZGtieWZvaW00dzli" target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                
+            </div>
+
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn">Submit</button>
+                    <span id="msg"></span> <!-- Success message below the button -->
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="copyright">
+        <p> Copyright © Chetana <i class="fa-solid fa-heart"></i></p>
+    </div>
+</div>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwcbZfkns3pBE--tLhm5myptLsJooUUk2eZk_7UKhvFB7jZd0tQ6sTlLevCkCaOse2ilQ/exec'
+    const form = document.forms['submit-to-google-sheet'];
+    const msg = document.getElementById("msg");
+
+    form.addEventListener('submit', e => {
+        e.preventDefault();
+        
+        fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+            .then(response => {
+                msg.innerHTML = "✅ Message sent successfully!";
+                msg.style.color = "green";
+                msg.style.visibility = "visible";
+
+                setTimeout(() => {
+                    msg.innerHTML = "";
+                    msg.style.visibility = "hidden";
+                }, 5000);
+                
+                form.reset();
+            })
+            .catch(error => {
+                msg.innerHTML = "❌ Error sending message. Try again!";
+                msg.style.color = "red";
+                msg.style.visibility = "visible";
+            });
+    });
+</script>
+
+<script>
+    function opentab(tabname) {
+        let tabLinks = document.querySelectorAll(".tab-links");
+        let tabContents = document.querySelectorAll(".tab-contents");
+
+        tabLinks.forEach(link => link.classList.remove("active-link"));
+        tabContents.forEach(content => content.classList.remove("active-tab"));
+
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+
+</body>
+</html>
